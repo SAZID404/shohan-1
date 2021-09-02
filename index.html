@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrat link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- favicon link  -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Book archive</title>
+    <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PGBVPtXDYPzLfB4WGZqOLsmpXP-58HuYXyS43tu8V1DfGkH8u3Ao00jbOzIMgBGHhHcs0_bTXgIXVhiHuCZ74YTm4glMm5Ln--G_RIShwkNENWPSM0H6ez6bURbnAhHo4H8XQEKegA5G5oCrWb7hngY7hBylQF8sgfCcHV-9OA8"
+      charset="UTF-8"
+    ></script>
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9ib29rLWFyY2hpdmVqcy5uZXRsaWZ5LmFwcC8_ZmJjbGlkPUl3QVIyT2xfQXc1MjhSOElBVF8tZmJVVEhkRm1vQjBjRmpBc3p6M09ldmxIOVVXY0dWS3dMLUJWU3NaZjQ"
+    />
+  </head>
+  <body>
+    <!-- input box  -->
+
+    <div class="container">
+      <div class="row row-col-1">
+        <div class="col">
+          <div class="input-group mb-3 w-75 mx-auto mt-5">
+            <input
+              id="input_box"
+              type="text"
+              class="form-control border-success py-3 shadow"
+              placeholder="Search your favourite books..."
+            />
+            <button class="btn btn-warning" type="button" id="search">
+              Search
+            </button>
+          </div>
+          <p class="text-center text-white fs-2" id="result"></p>
+          <p class="text-center text-white fs-3" id="book-found">
+            <span class="text-white" id="resultFound">1000</span>
+          </p>
+        </div>
+      </div>
+      <!-- preloader  -->
+      <div class="image text-center mx-auto">
+        <img
+          id="spinner"
+          class="w-25 mx-auto"
+          src="./Cube-1s-200px.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Show Books  -->
+    <div class="container mt-5">
+      <div class="row row-cols-md-2" id="row"></div>
+    </div>
+
+    <!-- main js link  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

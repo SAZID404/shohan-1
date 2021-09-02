@@ -1,0 +1,21 @@
+body {
+    background-image: url(./book.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: poppins;
+  }
+  
+  p#result {
+    display: none;
+  }
+  p#book-found {
+    display: none;
+  }
+  
+  /*  spinner css  */
+  #spinner {
+    display: none;
+  }
+  
